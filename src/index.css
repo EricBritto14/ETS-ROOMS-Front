@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Icones";
+    src: url("fonts/icones.ttf") format("ttf");
+}
+
+::-webkit-scrollbar {
+width: 5px;
+}
+
+::-webkit-scrollbar-track {
+background: rgb(241, 245, 249);
+border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+background: #d9d9d9;
+border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #71767c;
+}
+
+/* classes do repositorio calendario_atual (ele não usava tailwind) */
+
+/* Calendar container */
+.calendar-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+/* Event form container */
+.event-form-container {
+width: 400px;
+margin-top: 20px;
+border: 1px solid #ccc;
+padding: 20px;
+font-family: "Poppins", sans-serif;
+}
+
+.event-form-container select{
+border-style: none;
+
+}
+
+/* Form input fields */
+.event-form-container label {
+display: block;
+margin-bottom: 10px;
+font-weight: bold;
+}
+
+.event-form-container input,
+.event-form-container textarea {
+width: 100%;
+padding: 5px;
+}
+
+/* Submit button */
+
+.event-form-container button {
+padding: 8px 16px;
+background: #006edc;
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-family: "Poppins", sans-serif;
+font-weight: bold;
+}
+
+.custom-calendar
+.react-calendar__navigation__arrow.react-calendar__navigation__prev2-button {
+display: none;
+}
+
+.custom-calendar .react-calendar__navigation__label {
+font-size: 1.2rem;
+font-weight: bold;
+}
+
+.custom-calendar .custom-navigation {
+display: flex;
+justify-content: center;
+margin-top: 0.5rem;
+}
+
+.custom-calendar .custom-navigation button {
+background-color: transparent;
+border: none;
+cursor: pointer;
+font-size: 1rem;
+font-weight: bold;
+text-decoration: underline;
+}
+
+.custom-calendar .custom-navigation button:focus {
+outline: none;
+}
+
+/* muda a fonte dos dias da semana */
+.react-calendar__month-view__weekdays__weekday {
+font-weight: bold;
+color: #0e0e0e;
+font-family: "Poppins", sans-serif;
+border-bottom: none;
+
+}
+
+/* muda a fonte do nome do mes */
+.react-calendar__navigation__label {
+font-family: "Poppins", sans-serif;
+}
+
+/* muda o hover para tbm n ficar amarelo */
+.react-calendar__tile--now {
+background-color: rgb(255, 255, 255);
+color: #0e86ff;
+border-radius: none;
+}
+
+/* muda a fonte dos números */
+.react-calendar__tile {
+font-family: "Poppins", sans-serif;
+font-weight: bold;
+}
+
+/* muda a cor do dia de hoje */
+.react-calendar__tile--active {
+background: #006edc;
+color: white;
+border-radius: none;
+}
+
+/* ao clicar na data de hoje, fica cinza ao inves de amarelo */
+.react-calendar__tile--now:hover {
+background: #ececec !important;
+}
+
+/* muda a estrutura do calendario */
+.react-calendar {
+width: 300px;
+
+max-width: 100%;
+background: white;
+border: 1px solid #71767C;
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.125em;
+border-radius: 10px;
+}
+
+
+.react-calendar__month-view__weekNumbers .react-calendar__tile {
+    color: #71767C;
+}
+
+/* DatePicker.css */
+
+.date-picker {
+display: flex;
+flex-direction: column;
+align-items: center; /* Centraliza horizontalmente */
+justify-content: center; /* Centraliza verticalmente */
+height: 50px;
+}
+
+.date-picker label {
+
+margin-bottom: 5px;
+}
+
+.date-picker input {
+padding: 5px;
+border: 1px solid #71767C;
+border-radius: 4px;
+color: #71767C;
+}
+
+/* DateRangePicker.css */
+
+.date-range-picker {
+display: flex;
+
+}
+
+.aligned-input {
+margin-top: 2px;
+}
